@@ -1,3 +1,5 @@
+package algorithm;
+
 import instances.NCube;
 
 public class Solver {

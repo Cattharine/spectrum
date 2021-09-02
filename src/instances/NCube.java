@@ -47,7 +47,7 @@ public class NCube {
         return currentMax;
     }
 
-    private void setKFaces() {
+    public void setKFaces() {
         var iFaces = new HashMap<HashMap<Integer, Boolean>, ArrayList<Vertex>>();
         for (var key: kFaces.keySet()) {
             for (var i = 0; i < fullD; i++) {
@@ -85,5 +85,9 @@ public class NCube {
 
     public int getFullD() {
         return fullD;
+    }
+
+    public ArrayList<Vertex> getVertexes() {
+        return vertexes;
     }
 }

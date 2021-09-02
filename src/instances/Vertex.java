@@ -26,7 +26,7 @@ public class Vertex {
         }
     }
 
-        public int getMinPhi(int currentDimension, ArrayList<Vertex> vertexes) {
+    public int getMinPhi(int currentDimension, ArrayList<Vertex> vertexes) {
         var min = currentDimension + 1;
         for (var vertex : vertexes) {
             if (vertex == this)
