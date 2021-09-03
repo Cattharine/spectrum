@@ -69,7 +69,7 @@ public class NCube {
         kFaces = iFaces;
     }
 
-    private ArrayList<ArrayList<Vertex>> divide(int pos, ArrayList<Vertex> current) {
+    public ArrayList<ArrayList<Vertex>> divide(int pos, ArrayList<Vertex> current) {
         var t = new ArrayList<Vertex>();
         var f = new ArrayList<Vertex>();
         for (var vertex: current) {
@@ -90,4 +90,6 @@ public class NCube {
     public ArrayList<Vertex> getVertexes() {
         return vertexes;
     }
+
+    public HashMap<HashMap<Integer, Boolean>, ArrayList<Vertex>> getKFaces(){return kFaces;}
 }
